@@ -2,8 +2,7 @@
 FROM python:3.11
 
 # Install all required packages to run the model
-# TODO: 1. Add any additional packages required to run your model
-# RUN apt update && apt install --yes package1 package2 ...
+RUN apt update
 
 # Work directory
 WORKDIR /app
@@ -11,6 +10,9 @@ WORKDIR /app
 # Copy requirements file
 COPY ./requirements.txt .
 COPY ./requirements-all.txt .
+
+# Copy model file
+COPY ./src/model.pt .
 
 # Install dependencies
 RUN pip install --requirement requirements.txt --requirement requirements-all.txt

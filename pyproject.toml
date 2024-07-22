@@ -1,5 +1,5 @@
 [project]
-name = "service" # Edit this and remove comment
+name = "urban-sound-classifier" # Edit this and remove comment
 
 [tool.pytest.ini_options]
 pythonpath = [".", "src"]
