@@ -377,7 +377,7 @@ class MyService(Service):
             # Get the input features and target labels, and put them on the GPU
             data = next(iter(val_dl))
 
-            inputs, labels = data[0].to(device), data[1].to(device)
+            inputs, _ = data[0].to(device), data[1].to(device)
 
             # Normalize the inputs
             inputs_m = inputs.mean(dim=(0, 2, 3), keepdim=True)
@@ -496,8 +496,8 @@ async def lifespan(app: FastAPI):
 
 # TODO: 6. CHANGE THE API DESCRIPTION AND SUMMARY
 api_description = """
-Classify an urban sound sample. The possible categories are : 
-- air_conditioner 
+Classify an urban sound sample. The possible categories are :
+- air_conditioner
 - car_horn
 - children_playing
 - dog_bark
