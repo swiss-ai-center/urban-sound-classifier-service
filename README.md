@@ -15,4 +15,4 @@ The following sounds can be recognized:
 - siren
 - street_music
 
-_Check the [related documentation](https://docs.swiss-ai-center.ch/reference/services/image-rotate/) for more information._
+_Check the [related documentation](https://docs.swiss-ai-center.ch/reference/services/urban-sound-classifier/) for more information._
