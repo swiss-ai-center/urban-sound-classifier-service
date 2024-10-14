@@ -494,7 +494,6 @@ async def lifespan(app: FastAPI):
         await service_service.graceful_shutdown(my_service, engine_url)
 
 
-# TODO: 6. CHANGE THE API DESCRIPTION AND SUMMARY
 api_description = """
 Classify an urban sound sample. The possible categories are :
 - air_conditioner
