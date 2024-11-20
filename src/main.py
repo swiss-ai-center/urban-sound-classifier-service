@@ -331,7 +331,7 @@ class MyService(Service):
 
     def __init__(self):
         super().__init__(
-            name="Urban sound classifier",
+            name="Urban Sound Classifier",
             slug="urban-sound-classifier",
             url=settings.service_url,
             summary=api_summary,
@@ -515,7 +515,7 @@ Urban sound classification service.
 # Define the FastAPI application with information
 app = FastAPI(
     lifespan=lifespan,
-    title="Urban sound classification Service API.",
+    title="Urban Sound Classifier Service API.",
     description=api_description,
     version="1.0.0",
     contact={
